@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transitions!</title>
+    <style>
+      #container {
+        width: 100%;
+        height: 290px;
+        background-color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #hexagon {
+        transition: transform 0.1s;
+      }
+      #hexagon:hover {
+        transform: scale3d(1.2, 1.2, 1) rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="https://www.kirupa.com/images/hexagon.svg" id="hexagon" />
+    </div>
+  </body>
+</html>
